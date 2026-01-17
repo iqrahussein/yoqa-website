@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoqa website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <div class="header container">
+      <div class="logo">
+      <a href=""> <h1>TRAINING <span>STUDIO</span></h1> </a>
+        <div class="humbegar">
+      <i class="fa-solid fa-close" data-visible ="false"></i>
+      <i class="fa-solid fa-bars" data-visible ="true"></i>
+    </div>
+      </div>
+     
+
+      <nav class="menu"  data-visible ="false">
+        <ul>
+          <li><a href="#HOME"> HOME</a></li>
+          <li><a href="#HOME"> ABOUT</a></li>
+          <li><a href="#HOME"> CLASSES</a></li>
+          <li><a href="#HOME"> SCHEDULED</a></li>
+          <li><a href="#HOME"> CONTACT</a></li>
+        </ul>
+         <button> SIGN UP</button>
+      </nav>
+    </div>
+  </header>
+
+<!-- hero section -->
+  <section class="hero">
+  <video autoplay muted loop id="myvideo">
+  <source src="vedios and img/gym3.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="her_contant">
+    <h3> Work Harder,get stronger</h3>
+    <h1>easy with our gym</h1>
+    <button>BECOME A MEMBER</button>
+  </div>
+  </section>
+    
+
+
+  <script>
+        const hamburger = document.querySelector('.humbegar');
+        const mobileMenu = document.querySelector(".menu");
+        const icons = document.querySelectorAll("i");
+
+        hamburger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+
+
+    </script>  
+</body>
+</html>
