@@ -5,19 +5,19 @@
  box-sizing: border-box;
  padding: 0;
  margin: 0; 
- line-height: 1.5;
 }
 
 body{
-   font-family: "Roboto", sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
 }
 header{
   width: 100%;
   background-color: rgba(112, 111, 111, 0.2);
-  position: relative;
+  position: absolute;
   z-index: 111;
 
 }
+
 .humbegar{
   display: none;
 }
@@ -81,11 +81,7 @@ button:hover{
   background-color: aliceblue;
   color: #ed563b;
 }
-.hero{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+
 #myvideo{
   width: 100vw;
   height: 100vh;
@@ -93,14 +89,14 @@ button:hover{
 
 }
 
-/* .overlay{
+.overlay{
   background-color: rgba(31, 35, 63, 0.4);
   width: 100%;
-  height: 123vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   right: 0;
-} */
+}
 .her_contant{
   position: absolute;
   top: 50%;
@@ -112,15 +108,111 @@ button:hover{
 .her_contant h3{
   color: white;
   font-size: 2rem;
-  text-transform: uppercase;
 }
 .her_contant h1{
   font-size: 4rem;
   color: white;
   text-transform: uppercase;
-
+  font-weight: 700;
+  margin-block: 0.5rem;
 }
+.her_contant h1 span{
+  color: #ed563b;
+ }
 
+ .program{
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+ }
+
+ .pro_cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 1.3rem;
+ }
+ .pro_cont h1{
+  font-size: 2.8rem;
+  text-transform: uppercase;
+ }
+
+ .pro_cont p{
+    width: 69vh;
+    text-align: center;
+    color: rgba(18, 18, 18, 0.715);
+    line-height: 1.5;
+ }
+ .pro_cont h1 span{
+  color: #ed563b;
+ }
+ .pro_cont img{
+  width: 5%;
+ }
+
+ .pro_boxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+ }
+
+ .box{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4.5rem;
+  margin-top: 1.5rem;
+ }
+ .box img{
+  width: 25%;
+  height: 20%;
+
+ }
+ .box_info{
+  line-height: 1.7;
+  p{
+    color: rgba(18, 18, 18, 0.715);
+  }
+ }
+
+ .box_info a{
+    text-decoration: none;
+    p{
+    color: #ed563b;
+    }
+ }
+
+ .ads{
+ /* background-image:linear-gradient(rgba(152, 151, 151, 0.5), rgba(111, 111, 111, 0.5)), url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/training-image-01.jpg") ; */
+ background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg");
+ background-size: cover;
+ height: 50vh;
+
+ }
+ .ads_cont{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  height: 100%;
+  color: rgb(244, 242, 239);
+ }
+
+ .ads_cont p{
+ width: 73%;
+ line-height: 1.5;
+ }
+
+ .ads_cont h1{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+ }
+ .ads_cont span{
+  color: #ed563b;
+ }
 @media (max-width: 767px) {
    .humbegar{
     display: flex;
@@ -137,7 +229,6 @@ button:hover{
     font-size: 1.2rem;
    }
     header{
-      height: 100%;
       background-color: white;
     }
    .header{
@@ -147,10 +238,15 @@ button:hover{
    .logo{
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 5rem;
     align-items: center;
     height: 30vh;
    }
+
+   .logo h1{
+    font-size: 1.8rem;
+   }
+
    .menu ul{
       display: flex;
       flex-direction: column;
@@ -162,13 +258,13 @@ button:hover{
       background-color: rgb(238, 242, 242);
       margin-top:5rem;
       flex-direction: column;
-      transform: translatex(0%);
-      transition: transform 350ms ease-in-out;
+      transform: translateY(-0%);
+      /* transition: transform 350ms ease-in-out; */
       position: fixed;
 
     }
     .menu[data-visible="true"]{
-     transform: translatex(150%);
+     transform: translateY(-150%);
       
     }
     .humbegar i[data-visible="false"]{
@@ -179,10 +275,6 @@ button:hover{
       display: block;
     }
 
-    button{
-      width: 100%;
-      border-radius: 0;
-    }
     .menu ul li{
       border-bottom: solid 1px #ed563b;
       width: 100%;
@@ -193,12 +285,56 @@ button:hover{
       color: rgb(25, 24, 24);
     }
 
-   .her_contant{
-    display: none;
-   }
-
+    
    .header h1{
     color: black;
    }
+  
+    .her_contant {
+      margin-top: 1.5rem;
+    }
+   .her_contant h3{
+    font-size: 1.5rem;
+     }
    
+   .her_contant h1{
+    font-size: 2.9rem;
+    line-height: 1.2;
+    }
+    .pro_cont{
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+    }
+    .pro_cont h1{
+      font-size: 2rem;
+    }
+    .pro_boxs{
+      flex-direction: column;
+      display: flex;
+      gap: 0rem;
+    }
+
+    .box img{
+     width: 40%;
+    height: 40%;
+    }
+    .box{
+      margin: 1rem;
+    }
+   .ads{
+    width: 100%;
+    height: 300px;
+   } 
+   .ads_cont{
+    margin: 2rem;
+    width: 100%;
+   }
+   .ads_cont h1{
+    font-size: 1.5rem;
+    padding: 0;
+   }
+
+   .ads_cont p{
+    font-size: 1rem;
+   }
 }
