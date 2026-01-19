@@ -78,8 +78,9 @@ ul li a:hover{
 }
 
 button:hover{
-  background-color: aliceblue;
+  background-color: rgb(250, 253, 255);
   color: #ed563b;
+  box-shadow: 2px 2px 4px rgb(117, 116, 116);
 }
 
 #myvideo{
@@ -187,7 +188,6 @@ button:hover{
  background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg");
  background-size: cover;
  height: 50vh;
-
  }
  .ads_cont{
   display: flex;
@@ -212,6 +212,112 @@ button:hover{
  }
  .ads_cont span{
   color: #ed563b;
+ }
+
+ .classes{
+   margin-block: 5rem;
+ }
+.clases_cont ,.sche_cont{
+  margin-bottom: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+.clases_cont h1{
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.clases_cont h1 span{
+  color: #ed563b;
+}
+
+.clases_cont p{
+  color: rgb(61, 61, 61);
+  width: 40vw;
+  line-height: 1.5;
+}
+ .classes_boxs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+ }
+
+ .cl_box{
+  display: flex;
+  padding-block: 2rem;
+ box-shadow: 2px 2px 8px 4px rgba(76, 96, 103, 0.13);
+  margin-bottom: 2rem;
+  padding-left: 1.3rem;
+  border-radius: 8px;
+  /* width: 30vw; */
+ }
+
+ .cl_box img{
+  padding-right: 1.5rem;
+ }
+ .cl_box button{
+  width: 100%;
+  height: 100%;
+ }
+
+ .cl_but button{
+  width: 100%;
+  padding-block: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 550;
+  margin-bottom: 2rem;
+ }
+
+ .img_box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1.5;
+ }
+
+ .img_box button{
+  width: 10vw;
+ }
+
+ .schedule{
+  background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg");
+   padding-bottom: 5rem;
+ }
+
+ table{
+  width: 100vw;
+  border: 1px solid black;
+  border-collapse: collapse;
+
+ }
+
+ table td{
+  border: 1px solid rgb(251, 251, 251);
+  padding: 3.5rem;
+  color: white;
+  margin-bottom: 2rem;
+ }
+ .sche_cont{
+  color: white;
+  padding-top: 3rem;
+ }
+
+ .sche_cont h1{
+  font-size:3.1rem ;
+ }
+
+ .sche_cont h1 span{
+  color: #ed563b;
+ }
+
+ .sche_cont p{
+  width: 40vw;
+  line-height: 1.5;
  }
 @media (max-width: 767px) {
    .humbegar{
@@ -337,4 +443,33 @@ button:hover{
    .ads_cont p{
     font-size: 1rem;
    }
+
+   .classes_boxs{
+    display: block;
+    gap: 2rem;
+   }
+
+   .img_box button{
+  width: 30vw;
+ }
+ table tr td{
+  padding: 1rem;
+ }
+
+}
+@media (min-width:768px) and (max-width:1154px) {
+
+  .classes_boxs{
+    display: block;
+    gap: 2rem;
+   }
+  .cl_boxs{
+    width: 90vw;
+  }
+  .logo h1{
+    font-size: 1.6rem;
+  }
+  .menu ul li a{
+    font-size:1rem ;
+  }
 }
