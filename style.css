@@ -140,7 +140,7 @@ button:hover{
  }
 
  .pro_cont p{
-    width: 69vh;
+    width: 90vh;
     text-align: center;
     color: rgba(18, 18, 18, 0.715);
     line-height: 1.5;
@@ -257,9 +257,6 @@ button:hover{
   /* width: 30vw; */
  }
 
- .cl_box img{
-  padding-right: 1.5rem;
- }
  .cl_box button{
   width: 100%;
   height: 100%;
@@ -367,13 +364,13 @@ button:hover{
       background-color: rgb(238, 242, 242);
       margin-top:5rem;
       flex-direction: column;
-      transform: translateX(0%);
+      transform: translateX(150%);
       /* transition: transform 350ms ease-in-out; */
       position: fixed;
 
     }
     .menu[data-visible="true"]{
-     transform: translateX(150%);
+     transform: translateX(0%);
       
     }
     .humbegar i[data-visible="false"]{
@@ -441,10 +438,6 @@ button:hover{
    .ads_cont h1{
     font-size: 1.5rem;
     padding: 0;
-   }
-
-   .ads_cont p{
-    font-size: 1rem;
    }
 
    .classes_boxs{
