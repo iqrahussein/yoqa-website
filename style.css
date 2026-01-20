@@ -84,7 +84,7 @@ button:hover{
 }
 
 #myvideo{
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   object-fit: cover;
 
@@ -104,18 +104,20 @@ button:hover{
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
+  width: 90%;
 }
 
 .her_contant h3{
   color: white;
   font-size: 2rem;
+  text-transform: capitalize;
 }
 .her_contant h1{
   font-size: 4rem;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
-  margin-block: 0.5rem;
+  margin-block: 1rem;
 }
 .her_contant h1 span{
   color: #ed563b;
@@ -137,19 +139,17 @@ button:hover{
  .pro_cont h1{
   font-size: 2.8rem;
   text-transform: uppercase;
+  text-align: center;
  }
 
  .pro_cont p{
-    width: 50vh;
+    width: 60vh;
     text-align: center;
     color: rgba(18, 18, 18, 0.715);
     line-height: 1.5;
  }
  .pro_cont h1 span{
   color: #ed563b;
- }
- .pro_cont img{
-  width: 5%;
  }
 
  .pro_boxs {
@@ -217,7 +217,7 @@ button:hover{
  .classes{
    margin-block: 5rem;
  }
-.clases_cont ,.sche_cont{
+.clases_cont ,.sche_cont ,.trainers_cont{
   margin-bottom: 5rem;
   text-align: center;
   display: flex;
@@ -239,7 +239,7 @@ button:hover{
 .clases_cont p{
   color: rgb(61, 61, 61);
   line-height: 1.5;
-  width: 70%;
+  width: 60%;
 }
  .classes_boxs{
   display: grid;
@@ -314,9 +314,113 @@ button:hover{
 
  .sche_cont p{
   line-height: 1.5;
-  width: 70%;
+  width: 60%;
+ }
+
+ .trainers_cont p{
+    width: 60%;
+ }
+
+ .trainers{
+  margin-block: 4rem;
+ }
+
+ .trainers_boxs{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin-inline: 2rem;
+ }
+
+ .tr_box_con{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 0.5rem;
+  line-height: 1.5;
 
  }
+
+ .tr_box{
+  box-shadow: 0 2px 12px rgba(125, 125, 125, 0.244);
+  padding: 2rem;
+ }
+
+ .tr_box img{
+  width: 100%;
+ }
+ #tr_p{
+  color: #ed563b;
+ }
+ .tr_box_con p{
+  width: 90%;
+  color: rgb(150, 147, 147);
+ }
+ .icons i{
+  padding-right: 0.7rem;
+ }
+ .map_form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+
+ }
+
+ .map iframe{
+  width: 100%;
+  height: 100%;
+ }
+ .form{
+  background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg");
+ }
+ form{
+  background-color: white;
+  margin-top: 4rem;
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 0.3rem;
+ 
+ }
+ form input, form textarea{
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border: 1px solid rgb(194, 191, 191);
+}
+
+form textarea{
+  height: 120px;
+}
+.form .name-email{
+  width: 47%;
+  padding: 10px;
+}
+
+.form input[type="submit"]{
+  background-color: #ed583e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10vw;
+  font-size: 1.2rem;
+}
+
+form input[type="submit"]:hover{
+  background-color: #db7461;
+}
+.footer{
+  margin: 2rem;
+  text-align: center;
+}
+
+.footer span{
+  color:#ed563b;
+}
 @media (max-width: 767px) {
    .humbegar{
     display: flex;
@@ -350,7 +454,7 @@ button:hover{
    }
 
    .logo h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
    }
 
    .menu ul{
@@ -404,7 +508,7 @@ button:hover{
      }
    
    .her_contant h1{
-    font-size: 2.9rem;
+    font-size: 2rem;
     line-height: 1.2;
     }
     .pro_cont{
@@ -452,9 +556,26 @@ button:hover{
  table tr td{
   padding: 0.6rem;
  }
-
+ .trainers_boxs{
+  flex-wrap: wrap;
+ }
+ .map_form{
+  display: block;
+ }
+ .form{
+  width: 100%;
+  height: 100%;
+  padding-block: 0.5rem;
+ }
+ .form input[type="submit"]{
+  width: 40%;
+ }
 }
 @media (min-width:768px) and (max-width:1154px) {
+  
+  .her_contant h1{
+    font-size: 3rem;
+  }
 
   .classes_boxs{
     display: block;
