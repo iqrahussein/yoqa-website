@@ -143,7 +143,6 @@ button:hover{
  }
 
  .pro_cont p{
-    width: 60vh;
     text-align: center;
     color: rgba(18, 18, 18, 0.715);
     line-height: 1.5;
@@ -219,17 +218,14 @@ button:hover{
  }
 .clases_cont ,.sche_cont ,.trainers_cont{
   margin-bottom: 5rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100%;
-  flex-direction: column;
-  gap: 2rem;
 }
 .clases_cont h1{
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
+    padding: 1.5rem;
 }
 
 .clases_cont h1 span{
@@ -239,7 +235,8 @@ button:hover{
 .clases_cont p{
   color: rgb(61, 61, 61);
   line-height: 1.5;
-  width: 60%;
+    padding: 1.5rem;
+
 }
  .classes_boxs{
   display: grid;
@@ -305,7 +302,9 @@ button:hover{
  }
 
  .sche_cont h1{
-  font-size:3.1rem ;
+  font-size:2.8rem ;
+    padding: 1.5rem;
+
  }
 
  .sche_cont h1 span{
@@ -314,11 +313,20 @@ button:hover{
 
  .sche_cont p{
   line-height: 1.5;
-  width: 60%;
+   padding: 1.5rem;
+ 
  }
 
  .trainers_cont p{
-    width: 60%;
+    padding: 2REM;
+ }
+ .trainers_cont h1{
+  padding-bottom: 2rem;
+  font-size: 2.9rem;
+ }
+ 
+ .trainers_cont h1 span{
+  color: #ed563b;
  }
 
  .trainers{
@@ -354,7 +362,6 @@ button:hover{
   color: #ed563b;
  }
  .tr_box_con p{
-  width: 90%;
   color: rgb(150, 147, 147);
  }
  .icons i{
@@ -464,17 +471,17 @@ form input[type="submit"]:hover{
       padding-bottom: 1rem;
       align-items: center;
     }
+
     .menu{
-      background-color: rgb(238, 242, 242);
+      background-color: rgb(247, 242, 242);
       margin-top:5rem;
       flex-direction: column;
-      transform: translateX(150%);
+      transform: translateY(-150%);
       /* transition: transform 350ms ease-in-out; */
       position: fixed;
-
     }
     .menu[data-visible="true"]{
-     transform: translateX(0%);
+     transform: translateY(-0%);
       
     }
     .humbegar i[data-visible="false"]{
@@ -552,9 +559,12 @@ form input[type="submit"]:hover{
    .img_box button{
   width: 30vw;
  }
- 
+  
+ table{
+  margin-inline: 1rem;
+ }
  table tr td{
-  padding: 0.6rem;
+  padding: 0.5rem;
  }
  .trainers_boxs{
   flex-wrap: wrap;
@@ -565,7 +575,7 @@ form input[type="submit"]:hover{
  .form{
   width: 100%;
   height: 100%;
-  padding-block: 0.5rem;
+  /* padding-block: 1rem; */
  }
  .form input[type="submit"]{
   width: 40%;

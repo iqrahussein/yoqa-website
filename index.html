@@ -14,9 +14,10 @@
         <div class="logo">
         <a href=""> <h1>TRAINING <span>STUDIO</span></h1> </a>
         <div class="humbegar">
-        <i class="fa-solid fa-close" data-visible ="false"></i>
-        <i class="fa-solid fa-bars" data-visible ="true"></i>
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
         </div>
+        
       </div>
      
 
@@ -220,7 +221,7 @@
 <!-- Training section -->
   <section class="trainers container">
  <div class="trainers_cont">
-    <h1>Expert<span>Trainers</span></h1>
+    <h1>Expert <span>Trainers</span></h1>
     <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png" alt="">
     <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
  </div>
@@ -294,7 +295,7 @@
     <p>Copyright © 2020 Training Studio - Designed by <span>Iqra Hussein</span></p>
   </div>
 
-  <script>
+  <!-- <script>
         const hamburger = document.querySelector('.humbegar');
         const mobileMenu = document.querySelector(".menu");
         const icons = document.querySelectorAll("i");
@@ -313,7 +314,30 @@
                 icons[1].setAttribute('data-visible', "true");
             }
         });
-  </script>  
+  </script>   -->
 
+
+   <script>
+        const hamburger = document.querySelector('.humbegar');
+        const mobileMenu = document.querySelector(".menu");
+        const icons = document.querySelectorAll("i");
+
+        hamburger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+
+
+    </script>
 </body>
 </html>
